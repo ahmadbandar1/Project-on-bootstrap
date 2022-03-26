@@ -1,0 +1,156 @@
+:root{
+    --mainColor:#ff206e;
+}
+.text-mainColor{
+    color: var(--mainColor);
+}
+
+body{
+    background-image: url('../img/light_dot.jpg');
+}
+
+.btn-up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999;
+    cursor: pointer;
+    display: none;
+
+}
+
+.option{
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+}
+
+.option ul{
+    display: flex;
+    list-style: none;
+}
+
+.option ul li{
+    width: 30px;
+    height: 30px;
+    background-color: teal;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.option img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.option .fa-cog{
+    border: 1px solid var(--mainColor);
+    padding: 10px;
+    font-size: 25px;
+    /* color: aqua; */
+    color: var(--mainColor);
+    /* position: fixed; */
+    margin-top: 25%;
+    margin-bottom: 25%;
+    cursor: pointer;
+  
+}
+/* mobile */
+
+
+
+/* end mobile */
+.header{
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.navbar-dark .navbar-nav li:first-child a{
+    color: var(--mainColor);
+}
+
+.header .icons{
+    width: 18%;
+}
+.header .icons i{
+    border: 1px solid #222;
+    transition: all 1s;
+}
+.header .icons i:hover{
+    color: var(--mainColor);
+    border-color: #fff;
+}
+
+/* end header */
+
+/* start about */
+
+.title h2{
+    color: #f1f1f1;
+    font-size: 5rem;
+}
+
+.title h3{
+    font-size: 2.5rem;
+}
+
+/* start services */
+.services{
+    background-image: url('../img/dark_dot.jpg');
+}
+.services .title h2{
+color: #222;
+}
+
+.services .title h3{
+    color: #fff;
+}
+
+.services-item{
+    position: relative;
+}
+
+.services-item h4::after{
+    content: '';
+    background-color: var(--mainColor);
+    position: absolute;
+    top:50px;
+    left: 40%;
+    width: 20%;
+    height: 4px;
+}
+
+.services-item i{
+    border: 1px solid #fff;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top:-30px;
+    transform: translate(-50%);
+    transition: all 1s;
+
+}
+
+.services-item i:hover{
+    color: var(--mainColor);   
+}
+
+/*  */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--mainColor);
+    background-color: transparent;
+}
+
+.nav-tabs .nav-link{
+    border: 0;
+    color: #000;
+    font-weight: 700;
+}
+
+
